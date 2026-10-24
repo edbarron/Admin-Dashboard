@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: 1px solid red;
+}
+
+body {
+    height: 100vh;
+}
+
+/* 1. Main Layout: Sidebar + Main Content */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Fixed sidebar, fluid main area */
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #1992d4;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.sidebar-bottom {
+    margin-top: 40px;
+}
+
+/* 2. Main Wrapper: Header + Content Area */
+.main-wrapper {
+    display: grid;
+    grid-template-rows: 80px 1fr; /* Fixed header height, fluid content */
+    background-color: #e2e8f0; /* Light gray background */
+}
+
+/* Header Styling */
+.header {
+    background-color: white;
+    padding: 0 40px;
+    display: flex; /* Flex is fine for the header internals */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+/* 3. Content Area: Projects (Left) + Side Panel (Right) */
+.content-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Projects take 2/3, Side panel takes 1/3 */
+    gap: 20px;
+    padding: 30px;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* 4. Projects Grid: 2 columns for cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* 5. Side Panel: Stacked rows */
+.side-panel {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.side-panel section {
+    margin-bottom: 10px;
+}
+
+/* Minimal styling for placeholder cards */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 5px solid #facc15; /* Yellow accent line */
+    min-height: 150px;
+    margin-top: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.2rem;
+}
