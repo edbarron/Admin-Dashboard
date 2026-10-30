@@ -10,64 +10,183 @@
 
     <div class="dashboard-container">
         
-        <!-- SIDEBAR -->
         <aside class="sidebar">
-            <h2>Dashboard</h2>
+            <h2 class="logo">
+                <img src="icons/dashboard.svg" alt="logo" class="icon">
+                Dashboard
+            </h2>
+            
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><img src="icons/home.svg" alt="home" class="icon"> Home</li>
+                    <li><img src="icons/profile.svg" alt="profile" class="icon"> Profile</li>
+                    <li><img src="icons/messages.svg" alt="messages" class="icon"> Messages</li>
+                    <li><img src="icons/history.svg" alt="history" class="icon"> History</li>
+                    <li><img src="icons/tasks.svg" alt="tasks" class="icon"> Tasks</li>
+                    <li><img src="icons/communities.svg" alt="communities" class="icon"> Communities</li>
                 </ul>
             </nav>
+            
             <div class="sidebar-bottom">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><img src="icons/settings.svg" alt="settings" class="icon"> Settings</li>
+                    <li><img src="icons/support.svg" alt="support" class="icon"> Support</li>
+                    <li><img src="icons/privacy.svg" alt="privacy" class="icon"> Privacy</li>
                 </ul>
             </div>
         </aside>
 
-        <!-- MAIN WRAPPER -->
         <div class="main-wrapper">
             
-            <!-- HEADER -->
             <header class="header">
-                <div class="search-bar">Search...</div>
-                <div class="user-profile">Morgan Oakley</div>
+                <div class="header-top">
+                    <div class="search-container">
+                        <img src="icons/search.svg" alt="search" class="icon">
+                        <input type="text" placeholder="Search clients, invoices...">
+                    </div>
+                    
+                    <div class="user-profile">
+                        <img src="icons/bell.svg" alt="notifications" class="icon">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="avatar" class="avatar-small">
+                        <span>Sarah Jenkins</span>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="brand-info">
+                        <img src="icons/solviem-logo.png" alt="Solviem Logo" class="brand-logo">
+                        <div>
+                            <p class="greeting">Welcome back,</p>
+                            <h2 class="brand-name">Solviem</h2>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn">New</button>
+                        <button class="btn">Upload</button>
+                        <button class="btn">Share</button>
+                    </div>
+                </div>
             </header>
 
-            <!-- MAIN CONTENT -->
             <main class="content-area">
                 
-                <!-- PROJECTS SECTION (LEFT) -->
                 <section class="projects-section">
                     <h3>Your Projects</h3>
                     <div class="projects-grid">
-                        <!-- Placeholder cards -->
-                        <div class="card">Project 1</div>
-                        <div class="card">Project 2</div>
-                        <div class="card">Project 3</div>
-                        <div class="card">Project 4</div>
-                        <div class="card">Project 5</div>
-                        <div class="card">Project 6</div>
+                        
+                        <div class="card">
+                            <h4>Q3 Corporate Tax Filing</h4>
+                            <p>Reviewing deductions and preparing quarterly returns for TechCorp and Nexus LLC. Deadline approaching.</p>
+                            <div class="card-actions">
+                                <img src="icons/star.svg" alt="favorite" class="action-icon">
+                                <img src="icons/eye.svg" alt="view" class="action-icon">
+                                <img src="icons/share.svg" alt="share" class="action-icon">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Annual Audit Prep</h4>
+                            <p>Gathering documentation and structuring balance sheets for the upcoming external audit of Global Logistics.</p>
+                            <div class="card-actions">
+                                <img src="icons/star.svg" alt="favorite" class="action-icon">
+                                <img src="icons/eye.svg" alt="view" class="action-icon">
+                                <img src="icons/share.svg" alt="share" class="action-icon">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Payroll Integration</h4>
+                            <p>Migrating 50+ employees to the new automated payroll system. Needs final review before Friday.</p>
+                            <div class="card-actions">
+                                <img src="icons/star.svg" alt="favorite" class="action-icon">
+                                <img src="icons/eye.svg" alt="view" class="action-icon">
+                                <img src="icons/share.svg" alt="share" class="action-icon">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Business Valuation</h4>
+                            <p>Performing a discounted cash flow analysis and asset valuation for a potential merger in the tech sector.</p>
+                            <div class="card-actions">
+                                <img src="icons/star.svg" alt="favorite" class="action-icon">
+                                <img src="icons/eye.svg" alt="view" class="action-icon">
+                                <img src="icons/share.svg" alt="share" class="action-icon">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Expense Policy Review</h4>
+                            <p>Updating the company-wide expense reporting guidelines to comply with new IRS regulations.</p>
+                            <div class="card-actions">
+                                <img src="icons/star.svg" alt="favorite" class="action-icon">
+                                <img src="icons/eye.svg" alt="view" class="action-icon">
+                                <img src="icons/share.svg" alt="share" class="action-icon">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h4>Client Onboarding</h4>
+                            <p>Setting up new ledger accounts and reviewing previous year's financial statements for Apex Retail.</p>
+                            <div class="card-actions">
+                                <img src="icons/star.svg" alt="favorite" class="action-icon">
+                                <img src="icons/eye.svg" alt="view" class="action-icon">
+                                <img src="icons/share.svg" alt="share" class="action-icon">
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 
-                <!-- SIDE PANEL (RIGHT) -->
                 <aside class="side-panel">
                     <section class="announcements">
                         <h3>Announcements</h3>
-                        <div class="card">Announcement content</div>
+                        <div class="card">
+                            <h4>Tax Season Deadlines</h4>
+                            <p>Reminder: The corporate tax extension deadline is approaching on October 15th.</p>
+                            <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0;">
+                            <h4>New Software Training</h4>
+                            <p>Mandatory training on the new accounting integration will be held this Friday.</p>
+                        </div>
                     </section>
                     
                     <section class="trending">
                         <h3>Trending</h3>
-                        <div class="card">Trending content</div>
+                        <div class="card">
+                            
+                            <div class="trending-user">
+                                <img src="https://i.pravatar.cc/150?img=11" alt="avatar" class="avatar-trending">
+                                <div class="trending-info">
+                                    <p class="trending-name">@david</p>
+                                    <p class="trending-role">Audit Lead</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-user">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="avatar" class="avatar-trending">
+                                <div class="trending-info">
+                                    <p class="trending-name">@emma</p>
+                                    <p class="trending-role">Tax Specialist</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-user">
+                                <img src="https://i.pravatar.cc/150?img=13" alt="avatar" class="avatar-trending">
+                                <div class="trending-info">
+                                    <p class="trending-name">@mike</p>
+                                    <p class="trending-role">Payroll</p>
+                                </div>
+                            </div>
+
+                            <div class="trending-user">
+                                <img src="https://i.pravatar.cc/150?img=14" alt="avatar" class="avatar-trending">
+                                <div class="trending-info">
+                                    <p class="trending-name">@lisa</p>
+                                    <p class="trending-role">Analyst</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </section>
                 </aside>
 
